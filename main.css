@@ -262,6 +262,7 @@ code[class*=language-], pre[class*=language-]{
 
 /*다크모드 에러*/
 .language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url{
-	background: none !import;
+	background: none !important;
 }
+
 
