@@ -1,11 +1,10 @@
 pre {
     position: relative !important;
-    background: #f8f9fa !important;
-    border: 1px solid #e9ecef !important;
+    background: #f5f5f5 !important;
+    border: 1px solid #e1e1e1 !important;
     border-radius: 8px !important;
     margin: 1.5em 0 !important;
     overflow: hidden !important;
-    font-family: 'Consolas', 'Monaco', monospace !important;
     font-size: 14px !important;
     line-height: 1.5 !important;
 }
@@ -15,10 +14,22 @@ pre code {
     padding: 1rem !important;
     overflow-x: auto !important;
     background: transparent !important;
-    color: #24292e !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color: #333 !important;
+}
+
+/* 라이트 모드 스타일 */
+html:not([data-theme="dark"]) pre {
+    background: #f8f9fa !important;
+    border-color: #e9ecef !important;
 }
 
 
+
+
+
+/* 복사 버튼 스타일 */
 .code-copy-btn {
     position: absolute !important;
     top: 8px !important;
@@ -30,7 +41,14 @@ pre code {
     border-radius: 4px !important;
     font-size: 12px !important;
     cursor: pointer !important;
+    opacity: 0 !important;
+    transition: opacity 0.3s ease !important;
     z-index: 10 !important;
+    font-family: inherit !important;
+}
+
+pre:hover .code-copy-btn {
+    opacity: 1 !important;
 }
 
 .code-copy-btn:hover {
@@ -41,71 +59,108 @@ pre code {
     background: #28a745 !important;
 }
 
-/* 다크 모드 */
-[data-theme="dark"] pre {
-    background: #1e1e1e !important;
-    border-color: #404040 !important;
-}
-
-[data-theme="dark"] pre code {
-    color: #f8f8f2 !important;
-}
-
+html[data-theme="dark"] .code-copy-btn,
 [data-theme="dark"] .code-copy-btn {
     background: rgba(255,255,255,0.2) !important;
 }
 
+html[data-theme="dark"] .code-copy-btn:hover,
 [data-theme="dark"] .code-copy-btn:hover {
     background: rgba(255,255,255,0.3) !important;
 }
 
+/* Prism.js 토큰 색상 - 라이트 모드 */
+html:not([data-theme="dark"]) .token.comment,
+html:not([data-theme="dark"]) .token.prolog,
+html:not([data-theme="dark"]) .token.doctype,
+html:not([data-theme="dark"]) .token.cdata {
+    color: #6a737d !important;
+}
 
-.token.comment, .token.prolog, .token.doctype, .token.cdata { color: #6a737d !important; }
-.token.punctuation { color: #6f42c1 !important; }
-.token.property, .token.tag, .token.constant, .token.symbol, .token.deleted { color: #d73a49 !important; }
-.token.boolean, .token.number { color: #005cc5 !important; }
-.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted { color: #032f62 !important; }
-.token.operator, .token.entity, .token.url { color: #6f42c1 !important; }
-.token.atrule, .token.attr-value, .token.keyword { color: #d73a49 !important; }
-.token.function, .token.class-name { color: #6f42c1 !important; }
+html:not([data-theme="dark"]) .token.punctuation {
+    color: #6f42c1 !important;
+}
 
-[data-theme="dark"] .token.comment, 
-[data-theme="dark"] .token.prolog, 
-[data-theme="dark"] .token.doctype, 
-[data-theme="dark"] .token.cdata { color: #7c9885 !important; }
+html:not([data-theme="dark"]) .token.property,
+html:not([data-theme="dark"]) .token.tag,
+html:not([data-theme="dark"]) .token.constant,
+html:not([data-theme="dark"]) .token.symbol,
+html:not([data-theme="dark"]) .token.deleted {
+    color: #d73a49 !important;
+}
 
-[data-theme="dark"] .token.punctuation { color: #f8f8f2 !important; }
+html:not([data-theme="dark"]) .token.boolean,
+html:not([data-theme="dark"]) .token.number {
+    color: #005cc5 !important;
+}
 
-[data-theme="dark"] .token.property, 
-[data-theme="dark"] .token.tag, 
-[data-theme="dark"] .token.constant, 
-[data-theme="dark"] .token.symbol, 
-[data-theme="dark"] .token.deleted { color: #ff6b6b !important; }
+html:not([data-theme="dark"]) .token.selector,
+html:not([data-theme="dark"]) .token.attr-name,
+html:not([data-theme="dark"]) .token.string,
+html:not([data-theme="dark"]) .token.char,
+html:not([data-theme="dark"]) .token.builtin,
+html:not([data-theme="dark"]) .token.inserted {
+    color: #032f62 !important;
+}
 
-[data-theme="dark"] .token.boolean, 
-[data-theme="dark"] .token.number { color: #bd93f9 !important; }
+html:not([data-theme="dark"]) .token.operator,
+html:not([data-theme="dark"]) .token.entity,
+html:not([data-theme="dark"]) .token.url {
+    color: #6f42c1 !important;
+}
 
-[data-theme="dark"] .token.selector, 
-[data-theme="dark"] .token.attr-name, 
-[data-theme="dark"] .token.string, 
-[data-theme="dark"] .token.char, 
-[data-theme="dark"] .token.builtin, 
-[data-theme="dark"] .token.inserted { color: #50fa7b !important; }
+html:not([data-theme="dark"]) .token.atrule,
+html:not([data-theme="dark"]) .token.attr-value,
+html:not([data-theme="dark"]) .token.keyword {
+    color: #d73a49 !important;
+}
 
-[data-theme="dark"] .token.operator, 
-[data-theme="dark"] .token.entity, 
-[data-theme="dark"] .token.url { color: #f8f8f2 !important; }
+html:not([data-theme="dark"]) .token.function,
+html:not([data-theme="dark"]) .token.class-name {
+    color: #6f42c1 !important;
+}
 
-[data-theme="dark"] .token.atrule, 
-[data-theme="dark"] .token.attr-value, 
-[data-theme="dark"] .token.keyword { color: #8be9fd !important; }
 
-[data-theme="dark"] .token.function, 
-[data-theme="dark"] .token.class-name { color: #ffb86c !important; }
+/* 스크롤바 스타일 */
+pre code::-webkit-scrollbar {
+    height: 8px !important;
+}
 
-/* 모바일 */
+pre code::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1) !important;
+    border-radius: 4px !important;
+}
+
+pre code::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.3) !important;
+    border-radius: 4px !important;
+}
+
+html[data-theme="dark"] pre code::-webkit-scrollbar-track,
+[data-theme="dark"] pre code::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.1) !important;
+}
+
+html[data-theme="dark"] pre code::-webkit-scrollbar-thumb,
+[data-theme="dark"] pre code::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.3) !important;
+}
+
+/* 모바일 반응형 */
 @media (max-width: 768px) {
-    pre { font-size: 12px !important; }
-    pre code { padding: 0.75rem !important; }
-    .code-copy-btn { top: 4px !important; right: 4px !important; padding: 4px 8px !important; font-size: 11px !important; }
+    pre {
+        font-size: 12px !important;
+        margin: 1em 0 !important;
+    }
+    
+    pre code {
+        padding: 0.75rem !important;
+    }
+    
+    .code-copy-btn {
+        top: 4px !important;
+        right: 4px !important;
+        padding: 4px 8px !important;
+        font-size: 11px !important;
+    }
 }
