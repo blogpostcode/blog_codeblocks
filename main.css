@@ -255,4 +255,12 @@ code[class*=language-], pre[class*=language-]{
         font-size: 11px !important;
     }
 }
+/*이미지 설정*/
+.post-body.entry-content img{
+    width :100%;
+}
 
+/*다크모드 에러*/
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url{
+	background: none;
+}
