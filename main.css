@@ -1,3 +1,4 @@
+
 pre {
     position: relative !important;
     background: #f5f5f5 !important;
@@ -25,9 +26,21 @@ html:not([data-theme="dark"]) pre {
     border-color: #e9ecef !important;
 }
 
+html:not([data-theme="dark"]) pre code {
+    color: #333 !important;
+}
 
+/* 다크 모드 스타일 */
+html[data-theme="dark"] pre,
+[data-theme="dark"] pre {
+    background: #1e1e1e !important;
+    border-color: #404040 !important;
+}
 
-
+html[data-theme="dark"] pre code,
+[data-theme="dark"] pre code {
+    color: #d4d4d4 !important;
+}
 
 /* 복사 버튼 스타일 */
 .code-copy-btn {
@@ -120,6 +133,82 @@ html:not([data-theme="dark"]) .token.class-name {
     color: #6f42c1 !important;
 }
 
+/* Prism.js 토큰 색상 - 다크 모드 */
+html[data-theme="dark"] .token.comment,
+html[data-theme="dark"] .token.prolog,
+html[data-theme="dark"] .token.doctype,
+html[data-theme="dark"] .token.cdata,
+[data-theme="dark"] .token.comment,
+[data-theme="dark"] .token.prolog,
+[data-theme="dark"] .token.doctype,
+[data-theme="dark"] .token.cdata {
+    color: #6a9955 !important;
+}
+
+html[data-theme="dark"] .token.punctuation,
+[data-theme="dark"] .token.punctuation {
+    color: #d4d4d4 !important;
+}
+
+html[data-theme="dark"] .token.property,
+html[data-theme="dark"] .token.tag,
+html[data-theme="dark"] .token.constant,
+html[data-theme="dark"] .token.symbol,
+html[data-theme="dark"] .token.deleted,
+[data-theme="dark"] .token.property,
+[data-theme="dark"] .token.tag,
+[data-theme="dark"] .token.constant,
+[data-theme="dark"] .token.symbol,
+[data-theme="dark"] .token.deleted {
+    color: #f92672 !important;
+}
+
+html[data-theme="dark"] .token.boolean,
+html[data-theme="dark"] .token.number,
+[data-theme="dark"] .token.boolean,
+[data-theme="dark"] .token.number {
+    color: #ae81ff !important;
+}
+
+html[data-theme="dark"] .token.selector,
+html[data-theme="dark"] .token.attr-name,
+html[data-theme="dark"] .token.string,
+html[data-theme="dark"] .token.char,
+html[data-theme="dark"] .token.builtin,
+html[data-theme="dark"] .token.inserted,
+[data-theme="dark"] .token.selector,
+[data-theme="dark"] .token.attr-name,
+[data-theme="dark"] .token.string,
+[data-theme="dark"] .token.char,
+[data-theme="dark"] .token.builtin,
+[data-theme="dark"] .token.inserted {
+    color: #a6e22e !important;
+}
+
+html[data-theme="dark"] .token.operator,
+html[data-theme="dark"] .token.entity,
+html[data-theme="dark"] .token.url,
+[data-theme="dark"] .token.operator,
+[data-theme="dark"] .token.entity,
+[data-theme="dark"] .token.url {
+    color: #f8f8f2 !important;
+}
+
+html[data-theme="dark"] .token.atrule,
+html[data-theme="dark"] .token.attr-value,
+html[data-theme="dark"] .token.keyword,
+[data-theme="dark"] .token.atrule,
+[data-theme="dark"] .token.attr-value,
+[data-theme="dark"] .token.keyword {
+    color: #66d9ef !important;
+}
+
+html[data-theme="dark"] .token.function,
+html[data-theme="dark"] .token.class-name,
+[data-theme="dark"] .token.function,
+[data-theme="dark"] .token.class-name {
+    color: #fd971f !important;
+}
 
 /* 스크롤바 스타일 */
 pre code::-webkit-scrollbar {
@@ -145,7 +234,9 @@ html[data-theme="dark"] pre code::-webkit-scrollbar-thumb,
 [data-theme="dark"] pre code::-webkit-scrollbar-thumb {
     background: rgba(255,255,255,0.3) !important;
 }
-
+code[class*=language-], pre[class*=language-]{
+    text-shadow: none !important;
+}
 /* 모바일 반응형 */
 @media (max-width: 768px) {
     pre {
@@ -164,3 +255,4 @@ html[data-theme="dark"] pre code::-webkit-scrollbar-thumb,
         font-size: 11px !important;
     }
 }
+
