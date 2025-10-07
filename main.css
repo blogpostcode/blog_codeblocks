@@ -1,4 +1,4 @@
-
+/* 코드 블록 기본 스타일 */
 pre {
     position: relative !important;
     background: #f5f5f5 !important;
@@ -21,24 +21,24 @@ pre code {
 }
 
 /* 라이트 모드 스타일 */
-html:not([data-theme="dark"]) pre {
+html:not([data-theme=&quot;dark&quot;]) pre {
     background: #f8f9fa !important;
     border-color: #e9ecef !important;
 }
 
-html:not([data-theme="dark"]) pre code {
+html:not([data-theme=&quot;dark&quot;]) pre code {
     color: #333 !important;
 }
 
 /* 다크 모드 스타일 */
-html[data-theme="dark"] pre,
-[data-theme="dark"] pre {
+html[data-theme=&quot;dark&quot;] pre,
+[data-theme=&quot;dark&quot;] pre {
     background: #1e1e1e !important;
     border-color: #404040 !important;
 }
 
-html[data-theme="dark"] pre code,
-[data-theme="dark"] pre code {
+html[data-theme=&quot;dark&quot;] pre code,
+[data-theme=&quot;dark&quot;] pre code {
     color: #d4d4d4 !important;
 }
 
@@ -72,141 +72,141 @@ pre:hover .code-copy-btn {
     background: #28a745 !important;
 }
 
-html[data-theme="dark"] .code-copy-btn,
-[data-theme="dark"] .code-copy-btn {
+html[data-theme=&quot;dark&quot;] .code-copy-btn,
+[data-theme=&quot;dark&quot;] .code-copy-btn {
     background: rgba(255,255,255,0.2) !important;
 }
 
-html[data-theme="dark"] .code-copy-btn:hover,
-[data-theme="dark"] .code-copy-btn:hover {
+html[data-theme=&quot;dark&quot;] .code-copy-btn:hover,
+[data-theme=&quot;dark&quot;] .code-copy-btn:hover {
     background: rgba(255,255,255,0.3) !important;
 }
 
 /* Prism.js 토큰 색상 - 라이트 모드 */
-html:not([data-theme="dark"]) .token.comment,
-html:not([data-theme="dark"]) .token.prolog,
-html:not([data-theme="dark"]) .token.doctype,
-html:not([data-theme="dark"]) .token.cdata {
+html:not([data-theme=&quot;dark&quot;]) .token.comment,
+html:not([data-theme=&quot;dark&quot;]) .token.prolog,
+html:not([data-theme=&quot;dark&quot;]) .token.doctype,
+html:not([data-theme=&quot;dark&quot;]) .token.cdata {
     color: #6a737d !important;
 }
 
-html:not([data-theme="dark"]) .token.punctuation {
+html:not([data-theme=&quot;dark&quot;]) .token.punctuation {
     color: #6f42c1 !important;
 }
 
-html:not([data-theme="dark"]) .token.property,
-html:not([data-theme="dark"]) .token.tag,
-html:not([data-theme="dark"]) .token.constant,
-html:not([data-theme="dark"]) .token.symbol,
-html:not([data-theme="dark"]) .token.deleted {
+html:not([data-theme=&quot;dark&quot;]) .token.property,
+html:not([data-theme=&quot;dark&quot;]) .token.tag,
+html:not([data-theme=&quot;dark&quot;]) .token.constant,
+html:not([data-theme=&quot;dark&quot;]) .token.symbol,
+html:not([data-theme=&quot;dark&quot;]) .token.deleted {
     color: #d73a49 !important;
 }
 
-html:not([data-theme="dark"]) .token.boolean,
-html:not([data-theme="dark"]) .token.number {
+html:not([data-theme=&quot;dark&quot;]) .token.boolean,
+html:not([data-theme=&quot;dark&quot;]) .token.number {
     color: #005cc5 !important;
 }
 
-html:not([data-theme="dark"]) .token.selector,
-html:not([data-theme="dark"]) .token.attr-name,
-html:not([data-theme="dark"]) .token.string,
-html:not([data-theme="dark"]) .token.char,
-html:not([data-theme="dark"]) .token.builtin,
-html:not([data-theme="dark"]) .token.inserted {
+html:not([data-theme=&quot;dark&quot;]) .token.selector,
+html:not([data-theme=&quot;dark&quot;]) .token.attr-name,
+html:not([data-theme=&quot;dark&quot;]) .token.string,
+html:not([data-theme=&quot;dark&quot;]) .token.char,
+html:not([data-theme=&quot;dark&quot;]) .token.builtin,
+html:not([data-theme=&quot;dark&quot;]) .token.inserted {
     color: #032f62 !important;
 }
 
-html:not([data-theme="dark"]) .token.operator,
-html:not([data-theme="dark"]) .token.entity,
-html:not([data-theme="dark"]) .token.url {
+html:not([data-theme=&quot;dark&quot;]) .token.operator,
+html:not([data-theme=&quot;dark&quot;]) .token.entity,
+html:not([data-theme=&quot;dark&quot;]) .token.url {
     color: #6f42c1 !important;
 }
 
-html:not([data-theme="dark"]) .token.atrule,
-html:not([data-theme="dark"]) .token.attr-value,
-html:not([data-theme="dark"]) .token.keyword {
+html:not([data-theme=&quot;dark&quot;]) .token.atrule,
+html:not([data-theme=&quot;dark&quot;]) .token.attr-value,
+html:not([data-theme=&quot;dark&quot;]) .token.keyword {
     color: #d73a49 !important;
 }
 
-html:not([data-theme="dark"]) .token.function,
-html:not([data-theme="dark"]) .token.class-name {
+html:not([data-theme=&quot;dark&quot;]) .token.function,
+html:not([data-theme=&quot;dark&quot;]) .token.class-name {
     color: #6f42c1 !important;
 }
 
 /* Prism.js 토큰 색상 - 다크 모드 */
-html[data-theme="dark"] .token.comment,
-html[data-theme="dark"] .token.prolog,
-html[data-theme="dark"] .token.doctype,
-html[data-theme="dark"] .token.cdata,
-[data-theme="dark"] .token.comment,
-[data-theme="dark"] .token.prolog,
-[data-theme="dark"] .token.doctype,
-[data-theme="dark"] .token.cdata {
+html[data-theme=&quot;dark&quot;] .token.comment,
+html[data-theme=&quot;dark&quot;] .token.prolog,
+html[data-theme=&quot;dark&quot;] .token.doctype,
+html[data-theme=&quot;dark&quot;] .token.cdata,
+[data-theme=&quot;dark&quot;] .token.comment,
+[data-theme=&quot;dark&quot;] .token.prolog,
+[data-theme=&quot;dark&quot;] .token.doctype,
+[data-theme=&quot;dark&quot;] .token.cdata {
     color: #6a9955 !important;
 }
 
-html[data-theme="dark"] .token.punctuation,
-[data-theme="dark"] .token.punctuation {
+html[data-theme=&quot;dark&quot;] .token.punctuation,
+[data-theme=&quot;dark&quot;] .token.punctuation {
     color: #d4d4d4 !important;
 }
 
-html[data-theme="dark"] .token.property,
-html[data-theme="dark"] .token.tag,
-html[data-theme="dark"] .token.constant,
-html[data-theme="dark"] .token.symbol,
-html[data-theme="dark"] .token.deleted,
-[data-theme="dark"] .token.property,
-[data-theme="dark"] .token.tag,
-[data-theme="dark"] .token.constant,
-[data-theme="dark"] .token.symbol,
-[data-theme="dark"] .token.deleted {
+html[data-theme=&quot;dark&quot;] .token.property,
+html[data-theme=&quot;dark&quot;] .token.tag,
+html[data-theme=&quot;dark&quot;] .token.constant,
+html[data-theme=&quot;dark&quot;] .token.symbol,
+html[data-theme=&quot;dark&quot;] .token.deleted,
+[data-theme=&quot;dark&quot;] .token.property,
+[data-theme=&quot;dark&quot;] .token.tag,
+[data-theme=&quot;dark&quot;] .token.constant,
+[data-theme=&quot;dark&quot;] .token.symbol,
+[data-theme=&quot;dark&quot;] .token.deleted {
     color: #f92672 !important;
 }
 
-html[data-theme="dark"] .token.boolean,
-html[data-theme="dark"] .token.number,
-[data-theme="dark"] .token.boolean,
-[data-theme="dark"] .token.number {
+html[data-theme=&quot;dark&quot;] .token.boolean,
+html[data-theme=&quot;dark&quot;] .token.number,
+[data-theme=&quot;dark&quot;] .token.boolean,
+[data-theme=&quot;dark&quot;] .token.number {
     color: #ae81ff !important;
 }
 
-html[data-theme="dark"] .token.selector,
-html[data-theme="dark"] .token.attr-name,
-html[data-theme="dark"] .token.string,
-html[data-theme="dark"] .token.char,
-html[data-theme="dark"] .token.builtin,
-html[data-theme="dark"] .token.inserted,
-[data-theme="dark"] .token.selector,
-[data-theme="dark"] .token.attr-name,
-[data-theme="dark"] .token.string,
-[data-theme="dark"] .token.char,
-[data-theme="dark"] .token.builtin,
-[data-theme="dark"] .token.inserted {
+html[data-theme=&quot;dark&quot;] .token.selector,
+html[data-theme=&quot;dark&quot;] .token.attr-name,
+html[data-theme=&quot;dark&quot;] .token.string,
+html[data-theme=&quot;dark&quot;] .token.char,
+html[data-theme=&quot;dark&quot;] .token.builtin,
+html[data-theme=&quot;dark&quot;] .token.inserted,
+[data-theme=&quot;dark&quot;] .token.selector,
+[data-theme=&quot;dark&quot;] .token.attr-name,
+[data-theme=&quot;dark&quot;] .token.string,
+[data-theme=&quot;dark&quot;] .token.char,
+[data-theme=&quot;dark&quot;] .token.builtin,
+[data-theme=&quot;dark&quot;] .token.inserted {
     color: #a6e22e !important;
 }
 
-html[data-theme="dark"] .token.operator,
-html[data-theme="dark"] .token.entity,
-html[data-theme="dark"] .token.url,
-[data-theme="dark"] .token.operator,
-[data-theme="dark"] .token.entity,
-[data-theme="dark"] .token.url {
+html[data-theme=&quot;dark&quot;] .token.operator,
+html[data-theme=&quot;dark&quot;] .token.entity,
+html[data-theme=&quot;dark&quot;] .token.url,
+[data-theme=&quot;dark&quot;] .token.operator,
+[data-theme=&quot;dark&quot;] .token.entity,
+[data-theme=&quot;dark&quot;] .token.url {
     color: #f8f8f2 !important;
 }
 
-html[data-theme="dark"] .token.atrule,
-html[data-theme="dark"] .token.attr-value,
-html[data-theme="dark"] .token.keyword,
-[data-theme="dark"] .token.atrule,
-[data-theme="dark"] .token.attr-value,
-[data-theme="dark"] .token.keyword {
+html[data-theme=&quot;dark&quot;] .token.atrule,
+html[data-theme=&quot;dark&quot;] .token.attr-value,
+html[data-theme=&quot;dark&quot;] .token.keyword,
+[data-theme=&quot;dark&quot;] .token.atrule,
+[data-theme=&quot;dark&quot;] .token.attr-value,
+[data-theme=&quot;dark&quot;] .token.keyword {
     color: #66d9ef !important;
 }
 
-html[data-theme="dark"] .token.function,
-html[data-theme="dark"] .token.class-name,
-[data-theme="dark"] .token.function,
-[data-theme="dark"] .token.class-name {
+html[data-theme=&quot;dark&quot;] .token.function,
+html[data-theme=&quot;dark&quot;] .token.class-name,
+[data-theme=&quot;dark&quot;] .token.function,
+[data-theme=&quot;dark&quot;] .token.class-name {
     color: #fd971f !important;
 }
 
@@ -225,17 +225,27 @@ pre code::-webkit-scrollbar-thumb {
     border-radius: 4px !important;
 }
 
-html[data-theme="dark"] pre code::-webkit-scrollbar-track,
-[data-theme="dark"] pre code::-webkit-scrollbar-track {
+html[data-theme=&quot;dark&quot;] pre code::-webkit-scrollbar-track,
+[data-theme=&quot;dark&quot;] pre code::-webkit-scrollbar-track {
     background: rgba(255,255,255,0.1) !important;
 }
 
-html[data-theme="dark"] pre code::-webkit-scrollbar-thumb,
-[data-theme="dark"] pre code::-webkit-scrollbar-thumb {
+html[data-theme=&quot;dark&quot;] pre code::-webkit-scrollbar-thumb,
+[data-theme=&quot;dark&quot;] pre code::-webkit-scrollbar-thumb {
     background: rgba(255,255,255,0.3) !important;
 }
 code[class*=language-], pre[class*=language-]{
     text-shadow: none !important;
+}
+  
+  /*이미지 설정*/
+.post-body.entry-content img{
+    width :100%;
+}
+
+/*다크모드 에러*/
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url{
+	background: none !important;
 }
 /* 모바일 반응형 */
 @media (max-width: 768px) {
@@ -255,14 +265,3 @@ code[class*=language-], pre[class*=language-]{
         font-size: 11px !important;
     }
 }
-/*이미지 설정*/
-.post-body.entry-content img{
-    width :100%;
-}
-
-/*다크모드 에러*/
-.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url{
-	background: none !important;
-}
-
-
